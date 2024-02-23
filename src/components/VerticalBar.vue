@@ -24,10 +24,8 @@ onMounted(() => {
     renderChart(props, mChart);
 });
 
-watch(
-    () => props.data,
-    () => renderChart(props, mChart)
-);
+watch(() => props.data, () => renderChart(props, mChart));
+
 </script>
 
 <script lang="scss" scoped></script>

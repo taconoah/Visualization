@@ -4,9 +4,9 @@
     <!-- 左 -->
     <div class="flex-1 mr-5 bg-opacity-50 bg-slate-800 p-3 flex flex-col">
       <!-- 横向柱状图 -->
-      <HorizontalBar class="h-1/3 box-border pb-4" :data="data.regionData" />
+      <HorizontalBar :data="data.regionData" class="h-1/3 box-border pb-4" />
       <!-- 雷达图 -->
-      <RadarBar class="h-1/3 box-border pb-4" />
+      <RadarBar :data="data.riskData" class="h-1/3 box-border pb-4" />
       <!-- 关系图 -->
       <Relation />
     </div>
