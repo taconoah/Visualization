@@ -1,9 +1,10 @@
 <template>
-  <div class="bg-[url('assets/images/bg.png')] bg-cover bg-center h-screen text-white p-t flex overflow-hidden">
+  <div v-if="data"
+    class="bg-[url('assets/images/bg.png')] bg-cover bg-center h-screen text-white p-t flex overflow-hidden">
     <!-- 左 -->
     <div class="flex-1 mr-5 bg-opacity-50 bg-slate-800 p-3 flex flex-col">
       <!-- 横向柱状图 -->
-      <HorizontalBar class="h-1/3 box-border pb-4" />
+      <HorizontalBar class="h-1/3 box-border pb-4" :data="data.regionData" />
       <!-- 雷达图 -->
       <RadarBar class="h-1/3 box-border pb-4" />
       <!-- 关系图 -->
@@ -30,7 +31,7 @@
 </template>
 
 <script setup>
-import HorizontalBar from "./components/HorizontalBar.vue";
+import HorizontalBar from "@/components/HorizontalBar.vue";
 import RadarBar from "./components/RadarBar.vue";
 import Relation from "./components/Relation.vue";
 import TotalData from "./components/TotalData.vue";
@@ -44,7 +45,6 @@ import { getVisualization } from './api/visualization.js';
 const data = ref(null);
 const loadData = async () => {
   data.value = await getVisualization();
-  console.log(data.value);
 };
 loadData();
 
