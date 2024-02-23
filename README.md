@@ -12,10 +12,10 @@
 
 项目是基于 `Vue 3 + Vite 4 + ECharts 5 + Tailwindcss`开发的可视化项目
 
-#### 软件架构
+### 安装教程
 
-```html
-Vue3.2 + Vite 4 + ECharts 5 + Tailwindcss
+```js
+npm install
 ```
 
 #### 使用说明
