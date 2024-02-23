@@ -48,7 +48,7 @@ const props = defineProps({
 })
 
 const [totalCountTarget, city1, city2, city3, city4, city5, city6] = [ref(null), ref(null), ref(null), ref(null), ref(null), ref(null), ref(null)];
-console.log(props.data)
+
 onMounted(() => {
     new CountUp(totalCountTarget.value, props.data.total).start()
     new CountUp(city1.value, props.data.hb).start()

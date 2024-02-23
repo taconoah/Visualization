@@ -13,9 +13,9 @@
     <!-- 中 -->
     <div class="w-1/2 mr-5 flex flex-col">
       <!-- 数据总览图 -->
-      <TotalData :data="data.totalData" class="bg-opacity-50 bg-slate-800 p-3 flex-1" />
+      <TotalData :data="data.totalData" class="bg-opacity-50 bg-slate-800 p-3" />
       <!-- 地图可视化 -->
-      <MapChart class="bg-opacity-50 bg-slate-800 p-3 mt-4 flex-1" />
+      <MapChart :data="data.mapData" class="bg-opacity-50 bg-slate-800 p-3 mt-4 flex-1" />
     </div>
     <!-- 右 -->
     <div class="flex-1 bg-opacity-50 bg-slate-800 p-3 flex flex-col">
@@ -25,7 +25,6 @@
       <RingBar :data="data.abnormalData" class="h-1/3 box-border pb-4" />
       <!-- 环形柱状图 -->
       <WordCloud :data="data.wordCloudData" class="h-1/3 box-border pb-4" />
-
     </div>
   </div>
 </template>
