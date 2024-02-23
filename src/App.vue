@@ -20,7 +20,7 @@
     <!-- 右 -->
     <div class="flex-1 bg-opacity-50 bg-slate-800 p-3 flex flex-col">
       <!-- 纵向柱状图 -->
-      <VerticalBar class="h-1/3 box-border pb-4" />
+      <VerticalBar :data="data.serverData" class="h-1/3 box-border pb-4" />
       <!-- 环形图 -->
       <RingBar class="h-1/3 box-border pb-4" />
       <!-- 环形柱状图 -->
@@ -32,13 +32,13 @@
 
 <script setup>
 import HorizontalBar from "@/components/HorizontalBar.vue";
-import RadarBar from "./components/RadarBar.vue";
-import Relation from "./components/Relation.vue";
-import TotalData from "./components/TotalData.vue";
-import MapChart from "./components/MapChart.vue";
-import VerticalBar from "./components/VerticalBar.vue";
-import RingBar from "./components/RingBar.vue";
-import WordCloud from "./components/WordCloud.vue";
+import RadarBar from "@/components/RadarBar.vue";
+import Relation from "@/components/Relation.vue";
+import TotalData from "@/components/TotalData.vue";
+import MapChart from "@/components/MapChart.vue";
+import VerticalBar from "@/components/VerticalBar.vue";
+import RingBar from "@/components/RingBar.vue";
+import WordCloud from "@/components/WordCloud.vue";
 
 import { ref } from 'vue';
 import { getVisualization } from './api/visualization.js';
