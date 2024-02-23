@@ -22,7 +22,7 @@
       <!-- 纵向柱状图 -->
       <VerticalBar :data="data.serverData" class="h-1/3 box-border pb-4" />
       <!-- 环形图 -->
-      <RingBar class="h-1/3 box-border pb-4" />
+      <RingBar :data="data.abnormalData" class="h-1/3 box-border pb-4" />
       <!-- 环形柱状图 -->
       <WordCloud class="h-1/3 box-border pb-4" />
 
