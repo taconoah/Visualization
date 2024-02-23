@@ -1,6 +1,6 @@
 <template>
     <div>
-        数据总览图
+        横向柱状图
     </div>
 </template>
 
