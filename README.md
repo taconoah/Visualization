@@ -1,7 +1,25 @@
-# Vue 3 + Vite
+## 摄像数据平台
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### 版本优化
 
-## Recommended IDE Setup
+- 将模块进行抽离，使主代码清晰易读，模块易修改。
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### 前言
+
+数据可视化大屏
+
+主要是无聊想学点技术，跟着大佬视频一步一步敲出来（代码搬运工）顺便接触一下新技术
+
+项目是基于 `Vue 3 + Vite 4 + ECharts 5 + Tailwindcss`开发的可视化项目
+
+#### 软件架构
+
+```html
+Vue3.2 + Vite 4 + ECharts 5 + Tailwindcss
+```
+
+#### 使用说明
+
+```js
+npm run dev
+```
